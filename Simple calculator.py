@@ -7,6 +7,7 @@ def choose_number(str):
         except:
             print("This is not a number")
 
+
 def choose_operator(str):
     while(True):
         str = input("Choose your operator ('+' or '-' or '*' or '/'): ")
@@ -14,6 +15,7 @@ def choose_operator(str):
             return str
         else:
             print("This is not an operator")
+
 
 def calculation(a, b, operator):
     if operator == "+":
@@ -25,9 +27,11 @@ def calculation(a, b, operator):
     elif operator == "/":
         print(f"{a} divide by {b} equals {a / b}")
 
+        
 def startup_message():
     print("--------------) SIMPLE CALCULATOR (---------------")
 
+    
 def simple_calculator():
     startup_message()
     a = choose_number(str)
@@ -38,6 +42,3 @@ def simple_calculator():
 
 if __name__ == '__main__':
     simple_calculator()
-
-
-# Simple Calculator by Pryzmate
